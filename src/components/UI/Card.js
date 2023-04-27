@@ -7,7 +7,7 @@ const Card = (props) => {
         >
             {props.children}
         </section>
-    )
-}
+    );
+};
 
 export default Card;
