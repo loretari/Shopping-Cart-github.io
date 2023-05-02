@@ -25,8 +25,13 @@ if (isInitial) {
     return;
 }
 
-dispatch(sendCartData(cart))
-    }, [cart, dispatch]);
+if (cart.changed) {
+    dispatch(sendCartData(cart))
+}
+}, [cart, dispatch]);
+
+
+
 
     return (
         <Fragment>
